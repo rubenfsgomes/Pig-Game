@@ -56,7 +56,7 @@ buttonRD.addEventListener('click', function()
         const dado = Math.trunc(Math.random() * 6) + 1
         dado.classList.remove('hidden')
         dado.src = `dice-${dado}.png`
-        if (dice != 1)
+        if (dado != 1)
         {
             currentScore += dado
             document.getElementById(`current--${jogadorAtivo}`).textContent = currentScore
